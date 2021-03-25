@@ -48,7 +48,7 @@ const formData = {
     dogName: "Byron",
     dogBreed: "Poodle"
   };
-   
+
   const configObj = {
     method: "POST",
     headers: {
@@ -57,7 +57,7 @@ const formData = {
     },
     body: JSON.stringify(formData)
   };
-   
+
   fetch("http://localhost:3000/dogs", configObj);
 
 
@@ -65,7 +65,7 @@ const formData = {
     dogName: "Byron",
     dogBreed: "Poodle"
   };
-   
+
   const configObj = {
     method: "POST",
     headers: {
@@ -74,7 +74,7 @@ const formData = {
     },
     body: JSON.stringify(formData)
   };
-   
+
   fetch("http://localhost:3000/dogs", configObj)
     .then(function(response) {
       return response.json();
@@ -89,7 +89,7 @@ const formData = {
         dogName: "Byron",
         dogBreed: "Poodle"
       };
-       
+
       // method: "POST" is missing from the object below
       let configObj = {
         headers: {
@@ -98,7 +98,7 @@ const formData = {
         },
         body: JSON.stringify(formData)
       };
-       
+
       fetch("http://localhost:3000/dogs", configObj)
         .then(function(response) {
           return response.json();
@@ -110,4 +110,3 @@ const formData = {
           alert("Bad things! Ragnarők!");
           console.log(error.message);
         });
-
